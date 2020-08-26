@@ -1,0 +1,235 @@
+Part 1
+
+website - https://automationstepbystep.com/
+API Testing with Katalon Studio
+
+Today we will learn:
+
+Introduction
+——————————————————
+How to test APIs with Katalon Studio
+——————————————————
+Features
+——————————————————
+Summary
+——————————————————
+
+Windows | Mac
+
+Useful links 
+https://docs.katalon.com/katalon-stud...
+
+Part 2
+
+Testing SOAP Web Services
+with Katalon Studio
+
+
+Today we will learn:
+A practical example - How to test Soap 
+————————————————————
+Step by Step guideHow to add soap web service request
+How to add soap request in Test Case
+How to add validations
+How to validate value in soap response————————————————————
+Summary
+————————————————————
+
+
+http://www.dneonline.com/calculator.asmx
+http://www.dneonline.com/calculator.a...
+
+
+Windows | Mac
+
+
+To find path:
+http://xmltoolbox.appspot.com/xpath_g...
+https://docs.katalon.com/katalon-stud...
+
+part 3
+Testing REST Web Services
+with Katalon Studio
+
+Today we will learn:
+A practical example - How to test REST web services
+————————————————————
+Step by Step guideHow to add rest web service request
+How to add rest request in Test Case
+How to add keywords/validations
+How to validate value in rest response————————————————————
+Summary
+————————————————————
+
+
+Windows | Mac
+
+References:
+https://reqres.in/
+http://jsonpathfinder.com/
+
+part 4
+API Validations with Katalon Studio
+
+Today we will learn:
+
+How to validate response
+How to get value from nodes
+How to create a complete api validation test
+
+part 5
+Handling HTTP methods
+GET, POST, PUT, DELETE
+in Katalon Studio
+
+Today we will learn:
+
+How to handle GET API request
+How to handle POST API request
+How to handle PUT API request 
+How to handle DELETE API request
+
+References
+https://spring.io/understanding/REST
+https://reqres.in/
+
+
+When you change format json, text, etc
+Header get updated automatically
+
+part6
+part7
+
+NOTE: From ver 6.1.5. You will need to use the Basic Reports plugin. Watch this - https://www.youtube.com/watch?v=lejJQ...
+Result & Reporting with Katalon Studio
+Today we will learn:
+Test Reports
+HTML Reports
+Katalon Analytics
+
+part8
+Command Line Execution
+Katalon Studio
+
+Today we will learn:
+
+How to run API tests from command line
+
+https://docs.katalon.com/katalon-stud...
+
+part9
+How to share project on Git (version control system)
+How to commit, push, pull, clone
+How to remove project from Git
+
+part10
+How to setup Jenkins job
+How to get project from git
+How to run API tests from Jenkins
+Useful Tips
+
+java -jar jenkins.war --httpPort=xxxx
+
+
+HIT SUBSCRIBE & BELL TO GET NEW VIDEOS
+
+Become a member & get exclusive perks - Click the JOIN button
+
+https://www.youtube.com/channel/UCTt7...
+
+part11
+How to find and validate values in JSON response
+How to find and validate values in XML response
+
+References: 
+http://jsonpathfinder.com/
+chrome-extension://bankcpekihijigplompggpdolehhnale/index.html
+https://xmltoolbox.appspot.com/xpath_...
+
+
+https://docs.katalon.com/katalon-stud...
+
+part12
+Extracting data from XML responses and chaining requests
+Extracting data from responses and chaining requests
+
+WS.verifyElementText(response, 'ListOfCountryNamesByNameResponse.ListOfCountryNamesByNameResult.tCountryCodeAndName[0].sISOCode', 'AX')
+
+http://webservices.oorsprong.org/webs...
+
+Sample Code
+
+String xml1 = response1.responseBodyContent
+
+def dataValue= new XmlSlurper().parseText(xml1)
+
+def countryCode = dataValue.ListOfCountryNamesByNameResult.tCountryCodeAndName[2].sISOCode.text()
+
+GlobalVariable.name = countryCode
+
+part13
+Katalon Studio - API Chaining 
+Extracting data from JSON responses and chaining requests
+
+
+Code
+
+def slurper = new groovy.json.JsonSlurper()
+def result = slurper.parseText(response.getResponseBodyContent())
+def value = result.data[1].first_name
+
+
+References
+https://reqres.in/
+http://groovy-lang.org/json.html
+http://jsonpathfinder.com/
+https://forum.katalon.com/discussion/...
+
+part14
+API Request addition
+Verification snippets
+API request Addition to Test Cases
+Using Web Services Keywords
+
+
+http://webservices.oorsprong.org/webs...
+
+HIT SUBSCRIBE & BELL TO GET NEW VIDEOS
+
+Become a member & get exclusive perks - Click the JOIN button
+
+https://www.youtube.com/channel/UCTt7...
+
+part15
+How to pass value from a response to a request 
+
+Sample Code
+
+String xml1 = response1.responseBodyContent
+def dataValue= new XmlSlurper().parseText(xml1)
+def countryCode = dataValue.ListOfCountryNamesByNameResult.tCountryCodeAndName[2].sISOCode.text()
+
+GlobalVariable.name = countryCode
+
+References:
+http://xmltoolbox.appspot.com/xpath_g...
+
+
+HIT SUBSCRIBE & BELL TO GET NEW VIDEOS
+
+Become a member & get exclusive perks - Click the JOIN button
+
+https://www.youtube.com/channel/UCTt7...
+
+
+part16
+How to do Parametrisation using variables
+
+HIT SUBSCRIBE & BELL TO GET NEW VIDEOS
+
+Become a member & get exclusive perks - Click the JOIN button
+
+https://www.youtube.com/channel/UCTt7...
+
+part17
+
